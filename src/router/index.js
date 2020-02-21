@@ -1,5 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
+import Container from "@/components/Container";
 
 Vue.use(VueRouter);
 
@@ -9,7 +10,7 @@ const routes = [
     redirect: {
       name: "MainPage"
     },
-    component: () => import("@/components/RouterView.vue"),
+    component: Container,
     children: [
       {
         path: "MainPage",
@@ -17,14 +18,24 @@ const routes = [
         component: () => import("@/views/MainPage.vue")
       },
       {
-        path: "SubPage",
-        name: "SubPage",
-        component: () => import("@/views/SubPage.vue")
+        path: "EventPage",
+        name: "EventPage",
+        component: () => import("@/views/EventPage.vue")
       },
       {
-        path: "TestPage",
-        name: "TestPage",
-        component: () => import("@/views/TestPage.vue")
+        path: "GamePage",
+        name: "GamePage",
+        component: () => import("@/views/GamePage.vue")
+      },
+      {
+        path: "ShopPage",
+        name: "ShopPage",
+        component: () => import("@/views/ShopPage.vue")
+      },
+      {
+        path: "BagPage",
+        name: "BagPage",
+        component: () => import("@/views/BagPage.vue")
       }
     ]
   }

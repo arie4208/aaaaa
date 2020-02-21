@@ -1,0 +1,24 @@
+.el-carousel__indicators--horizontal {
+  display: flex;
+  bottom: 0;
+}
+
+.el-carousel__indicator--horizontal {
+  padding: 3px 11px;
+
+  button {
+    width: 8px;
+    height: 8px;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-radius: 100%;
+    background: #c4c4c4;
+    opacity: 1 !important;
+  }
+
+  &.is-active {
+    button {
+      background: #ffa514;
+    }
+  }
+}

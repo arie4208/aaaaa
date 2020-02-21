@@ -1,6 +1,6 @@
 <template>
-  <div style="padding-bottom: 55px; padding-top: 91px;">
-    <user-info-header style="position: fixed; left:0; top:0; right:0; z-index:50;" />
+  <div>
+    <user-info-header />
 
     <carousel :image-list="imageList" />
 
@@ -35,7 +35,7 @@
     <sub-title title="진행중인 이벤트" />
     <horizon-scroll-event />
 
-    <global-navigation style="position:fixed; left:0; bottom:0; width:100%; z-index:50;" />
+    <global-navigation />
   </div>
 </template>
 
@@ -49,7 +49,7 @@ import PremiumIcon from "@/components/PremiumIcon";
 import HorizonScrollEvent from "@/components/HorizonScrollEvent";
 import GlobalNavigation from "@/components/GlobalNavigation";
 export default {
-  name: "MainPage",
+  name: "GamePage",
   components: {
     UserInfoHeader,
     Carousel,

@@ -1,14 +1,14 @@
 import Vue from "vue";
 import Vuex from "vuex";
+import userInfo from "./modules/userInfo";
 
 Vue.use(Vuex);
 
-import test from "./modules/test";
 export default new Vuex.Store({
   state: {},
   mutations: {},
   actions: {},
   modules: {
-    test
+    userInfo
   }
 });
